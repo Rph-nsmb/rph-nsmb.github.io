@@ -1,0 +1,163 @@
+@font-face {
+     font-family: Ubuntu;
+     src: url('./Ubuntu-font/Ubuntu-R.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: Ubuntu-L;
+     src: url('./Ubuntu-font/Ubuntu-L.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: Ubuntu-B;
+     src: url('./Ubuntu-font/Ubuntu-B.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: Ubuntu-M;
+     src: url('./Ubuntu-font/Ubuntu-M.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+
+:root {
+
+	--main-font: Ubuntu;
+	--main-font-l: Ubuntu-L;
+	--main-font-b: Ubuntu-B;
+	--main-font-m: Ubuntu-M;
+
+}
+
+
+body {
+    background: url('./bg.png') no-repeat center fixed;
+    background-size: cover;
+}
+
+.navbar {
+
+  top: 1.5rem;
+  width: 97%;
+  margin: 1.5rem auto 2rem auto;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  z-index: 10;
+
+  border-radius: 25px;
+  background: transparent;
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.1);
+
+  font-family: Ubuntu;
+  font-size: 200%;
+}
+
+
+.main {
+	margin: 10rem auto;
+	width: 80%;
+	
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+  justify-content: center;
+	
+	font-family: var(--main-font);
+}
+
+
+
+[id^=section] {
+
+	width:100%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+
+.link {
+
+	color: #ff00f7;
+}
+
+.bold {
+
+	font-family: var(--main-font-b);
+}
+
+.youtube_player {
+  position: relative;
+  width: 60%;
+  padding-bottom: 30%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 3rem auto;
+  
+  transition: all 0.5s;
+}
+
+.youtube_player:hover {
+
+	transform: scale(1.25);
+}
+
+.youtube_player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 25px;
+}
+
+.video_wrapper {
+  position: relative;
+  width: 60%;
+  padding-bottom: 30%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 3rem auto;
+  
+  transition: all 0.5s;
+}
+
+.video_wrapper:hover {
+
+	transform: scale(1.25);
+}
+
+.video_wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 25px;
+}
+
+
+#footer {
+
+	width: 40%;
+	margin: 15rem auto 0 auto;
+
+	padding: 2rem;
+
+	border-top: 1px solid #a1a1a1;
+
+	text-align: center;
+	font-family: var(--main-font-l);
+	font-size: 150%;
+	color: #000000;
+}

@@ -1,0 +1,90 @@
+.title {
+
+	font-size: 500%;
+	font-family: var(--main-font);
+
+}
+
+.subtitle {
+
+	font-size: 250%;
+	font-family: var(--main-font-l);
+}
+
+.platform_list {
+
+	margin-top: 2.5rem;
+
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	flex-wrap: wrap;
+	width: 100%;
+
+}
+
+.platform {
+
+  width: 40%;
+  margin: 0 auto;
+  padding: 1rem 4rem 1rem 4rem;
+
+  text-align: left;
+
+  border-radius: 25px;
+  box-shadow: inset 5px 5px 20px 10px #f0f0f0, inset -5px -5px 50px 10px #FFFFFF52;
+}
+
+.platform h1 {
+
+	font-size: 300%;
+	color: #FFFFFF;
+	margin-bottom: -0.5rem;
+}
+
+.platform p {
+
+	font-size: 125%;
+	color: #FFFFFF;
+
+}
+
+.platform a {
+
+	color: unset;
+	
+}
+
+.platform a:hover {
+	
+	color: unset;
+
+}
+
+.link {
+
+	height:auto;
+	padding: 0.5rem 0.75rem;
+	margin-left: 0.25rem;
+	width: fit-content;
+	text-align: left;
+
+	font-size: 150%;
+	
+	border: 2px solid #FFFFFF;
+	border-radius: 12px;
+	background: transparent;
+	color: #FFFFFF;
+
+	cursor: pointer;
+	transition: all 0.5s;
+
+}
+
+.link:hover {
+
+
+	background-color: #FFFFFF;
+	color: #000000;
+
+}

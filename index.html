@@ -1,77 +1,127 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 	
-	<style>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>Rph's homepage</title>
+	<link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/169435186">
+	
+	<meta content="Rph's homepage" property="og:title">
+	<meta content="https://avatars.githubusercontent.com/u/169435186" property="og:image">
+	<meta content="#ffe5fb" data-react-helmet="true" name="theme-color">
+
+	<link href="./Assets/Stylesheets/Rph.css" rel="stylesheet">
+	<link href="./Assets/Stylesheets/Navbar.css" rel="stylesheet"> 
+	<link href="./Assets/Stylesheets/Home.css" rel="stylesheet">
+	<link href="./Assets/Stylesheets/Projects.css" rel="stylesheet">    
+
+	<script src="./Assets/Navbar/Navbar.js" defer></script>
+	<script src="./Assets/Footer/Footer.js" defer></script>
+	<script src="./Assets/Home/Home.js" defer></script>
+
+	<script src="./Assets/Projects/MHDS/MHDS.js" defer></script>
+	<script src="./Assets/Projects/MKVN/MKVN.js" defer></script>
+	<script src="./Assets/Projects/WIKILG/WIKILG.js" defer></script>
+	<script src="./Assets/Projects/NMSMB/NMSMB.js" defer></script>
 
 
-		@font-face {
-			font-family: Ubuntu;
-			src: url('https://raw.githubusercontent.com/NotTheOnlyRph/NSMBC.github.io/refs/heads/main/mods/New%20Mini%20SMB/assets/Ubuntu-Medium.ttf') format('truetype');
-			font-weight: normal;
-			font-style: normal;
-		}
+</head>
 
+<body>
+	
+	<div id="navbar" class="navbar"> </div>
 
-		body {
-			margin: 0;
-			text-align: center;
-			color: white;
-			background: linear-gradient(#ff6cfc 80%, #FFE5FB 100%);
-			background-repeat: no-reapeat;
-			background-size: cover;
-			background-attachment: fixed
-		}
-		
-		img {
-			max-width: 100%;
-			height: auto;
-			}
-		
-		div {
-			width: 90%;
-			text-align: center;
-			background-color: rgba(255, 255, 255, 0.4);
-			margin: 0 auto;
-			align-content: center;
-			padding: 5px;
-			border-radius: 25px;
-			}
+	<div class="main">
+	
+		<div id="section1">
 			
-		h1 {
-			font-family: Ubuntu;
-			font-size: 600%;
-		}
+			<div class="welcome"> Welcome! </div>
 		
-		h2 {
-			font-family: Ubuntu;
-			font-size: 400%;
-		}
+			<div class="introtext">
+				Welcome to my website! You will find here all the infos you need about me: who I am, what I work on, how to contact me...
+			</div>
+		</div>
 		
-		h3 {
-			font-family: Ubuntu;
-			font-size: 300%;
-		}
+		<div id="section2">
+			
+			<div class="title">About me</div>
+			
+			<div class="id"><div class="id_inside">
+			
+				<div class="id_left">
+					
+					<img src="https://avatars.githubusercontent.com/u/169435186" style="border-radius: 0">
+					<br>My main pfp
+					<br><br>
+					<br><img src="https://cdn.discordapp.com/avatars/1217857940334186657/a73b22578692864714517a358038a031.webp?size=256">
+					<br>An alternate pfp I use on some platforms
+					
+				</div>
+				
+				<div style="border-right: 2px solid #e5e5e5"></div>
+				
+				<div class="id_right">
+				
+					<div><span class="bold">Username:</span> Rph</div>
+					<div><span class="bold">Aka:</span> Rph_nsmb, RphNSMB, NotTheOnlyRph</div>
+					<div><span class="bold">Real name:</span> Raphaelle <img src="./Assets/secret.png"></div>
+					<div><span class="bold">Birthday:</span> 9th July <img src="./Assets/secret.png"></div>
+					<div><span class="bold">Country:</span> France</div>
+					<div><span class="bold">Gender:</span> Female (transgender)</div>
+					<div><span class="bold">Pronouns:</span> She/Her</div>
+					<div class="id_otherlinks"><span>&nbsp Other links:</span> 
+						<a target="blank_" href="https://en.pronouns.page/@Rph_nsmb" class="link">pronouns.page</a><span>, </span>
+						<a target="blank_" href="https://pronoms.fr/@Rph_nsmb" class="link">pronoms.fr</a>
+					</div>
+				
+				</div>
+			
+			</div></div>
+			
+			<div class="introtext">
+				
+				Hello, I'm Raphaelle, aka Rph! I'm a trans girl living in France. On my free time, I work on ROM hacks, musics and homebrews. I am a fan of open-source software, especially Linux (I use <a target="blank_" href="https://fedoraproject.org/" class="link">Fedora</a> btw!).
+				<br><span class="bold">I can also do websites, like the one you're currently reading!</span>
+			</div>
+			
+		</div>
+	
+		<div id="section3">
 		
-		p {
-			font-family: Ubuntu;
-			font-size: 250%;
-			word-wrap: break-word;
-			word-break: keep-all;
-		}
+			<div class="title">Featured project</div>
+			
+			<div id="featuredproject"></div>
+			
+			<div class="introtext"><a target="blank" href="https://rph-nsmb.github.io/projects" class="link">All of my projects are listed here!</a></div>
+		
+		</div>
+		
+		<div id="section4">
+		
+			<div class="title">My devices (for nerds)</div>
+			<br><br>
+			<div id="devices">
 
-	</style>
+			</div>		
+		</div>
+			
+			
+		<div id="section5">
+		
+			<div class="title">Want to contact me?</div>
+			<br>
+			<div class="introtext">See how to send me a message through the <a target="blank" href="https://rph-nsmb.github.io/contact" class="link">contact</a> page!</div>
+		
+		</div>
+
+	</div>
+
+	<div id="footer">
 	
-  <head>
+	</div>
 
-	  <title>Rph's homepage</title>
+</body>
 
-	</head>
-
-	<body>
-
-	
-	<h1>Page under construction</h1>
-	
-	</body>
 </html>
