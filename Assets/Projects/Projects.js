@@ -1,10 +1,10 @@
 const projectPaths = [
-  "./Assets/Projects/MHDS/MHDS.html",
-  "./Assets/Projects/MKVN/MKVN.html",
-  "./Assets/Projects/WIKILG/WIKILG.html",
-  "./Assets/Projects/NMSMB/NMSMB.html",
-  "./Assets/Projects/NPPSMB/NPPSMB.html",
-  "./Assets/Projects/SM256/SM256.html"
+  "https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Projects/MHDS/MHDS.html",
+  "https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Projects/MKVN/MKVN.html",
+  "https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Projects/WIKILG/WIKILG.html",
+  "https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Projects/NMSMB/NMSMB.html",
+  "https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Projects/NPPSMB/NPPSMB.html",
+  "https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Projects/SM256/SM256.html"
 ];
 
 const insertIds = [

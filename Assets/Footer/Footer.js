@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    fetch('./Assets/Footer/Footer.html')
+    fetch('https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Footer/Footer.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error loading footer');

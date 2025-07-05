@@ -1,27 +1,27 @@
 @font-face {
      font-family: Ubuntu;
-     src: url('./Ubuntu-font/Ubuntu-R.ttf') format('truetype');
+     src: url('https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Stylesheets/Ubuntu-font/Ubuntu-R.ttf') format('truetype');
      font-weight: normal;
      font-style: normal;
 }
 
 @font-face {
      font-family: Ubuntu-L;
-     src: url('./Ubuntu-font/Ubuntu-L.ttf') format('truetype');
+     src: url('https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Stylesheets/Ubuntu-font/Ubuntu-L.ttf') format('truetype');
      font-weight: normal;
      font-style: normal;
 }
 
 @font-face {
      font-family: Ubuntu-B;
-     src: url('./Ubuntu-font/Ubuntu-B.ttf') format('truetype');
+     src: url('https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Stylesheets/Ubuntu-font/Ubuntu-B.ttf') format('truetype');
      font-weight: normal;
      font-style: normal;
 }
 
 @font-face {
      font-family: Ubuntu-M;
-     src: url('./Ubuntu-font/Ubuntu-M.ttf') format('truetype');
+     src: url('https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Stylesheets/Ubuntu-font/Ubuntu-M.ttf') format('truetype');
      font-weight: normal;
      font-style: normal;
 }
@@ -38,7 +38,7 @@
 
 
 body {
-    background: url('./bg.png') no-repeat center fixed;
+    background: url('https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/bg.png') no-repeat center fixed;
     background-size: cover;
 }
 
