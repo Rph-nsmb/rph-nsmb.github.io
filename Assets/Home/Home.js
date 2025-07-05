@@ -1,25 +1,25 @@
 const paths = [
-	"./Assets/Projects/MHDS/MHDS.html",
-	"./Assets/Projects/MHDS/MHDS.html",
-	"./Assets/Projects/MHDS/MHDS.html",
-	"./Assets/Projects/MHDS/MHDS.html",
-	"./Assets/Projects/MHDS/MHDS.html",
-	"./Assets/Projects/MKVN/MKVN.html",
-	"./Assets/Projects/MKVN/MKVN.html",
-	"./Assets/Projects/MKVN/MKVN.html",
-	"./Assets/Projects/MKVN/MKVN.html",
-	"./Assets/Projects/MKVN/MKVN.html",
-	"./Assets/Projects/WIKILG/WIKILG.html",
-	"./Assets/Projects/WIKILG/WIKILG.html",
-	"./Assets/Projects/WIKILG/WIKILG.html",
-	"./Assets/Projects/NMSMB/NMSMB.html"
+	"/Assets/Projects/MHDS/MHDS.html",
+	"/Assets/Projects/MHDS/MHDS.html",
+	"/Assets/Projects/MHDS/MHDS.html",
+	"/Assets/Projects/MHDS/MHDS.html",
+	"/Assets/Projects/MHDS/MHDS.html",
+	"/Assets/Projects/MKVN/MKVN.html",
+	"/Assets/Projects/MKVN/MKVN.html",
+	"/Assets/Projects/MKVN/MKVN.html",
+	"/Assets/Projects/MKVN/MKVN.html",
+	"/Assets/Projects/MKVN/MKVN.html",
+	"/Assets/Projects/WIKILG/WIKILG.html",
+	"/Assets/Projects/WIKILG/WIKILG.html",
+	"/Assets/Projects/WIKILG/WIKILG.html",
+	"/Assets/Projects/NMSMB/NMSMB.html"
 ];
 
 let rand = Math.floor(Math.random() * paths.length);
 let projectPath = paths[rand];
 
 
-const devicesPath = "./Assets/Home/Devices.html";
+const devicesPath = "/Assets/Home/Devices.html";
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
