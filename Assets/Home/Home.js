@@ -4,14 +4,18 @@ const paths = [
 	"/Assets/Projects/MHDS/MHDS.html",
 	"/Assets/Projects/MHDS/MHDS.html",
 	"/Assets/Projects/MHDS/MHDS.html",
+	
 	"/Assets/Projects/MKVN/MKVN.html",
 	"/Assets/Projects/MKVN/MKVN.html",
 	"/Assets/Projects/MKVN/MKVN.html",
 	"/Assets/Projects/MKVN/MKVN.html",
 	"/Assets/Projects/MKVN/MKVN.html",
+	"/Assets/Projects/MKVN/MKVN.html",
+	
 	"/Assets/Projects/WIKILG/WIKILG.html",
 	"/Assets/Projects/WIKILG/WIKILG.html",
 	"/Assets/Projects/WIKILG/WIKILG.html",
+	
 	"/Assets/Projects/NMSMB/NMSMB.html"
 ];
 
