@@ -77,12 +77,16 @@
 }
 
 #devices {
+
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .device {
+
+  width: 42%;
   max-width: 100%;
   text-align: center;
   background: rgba(240, 240, 240, 0.1);
@@ -101,18 +105,6 @@
 
 	.device {
 	  width: 100%;
-	}
-}
-
-@media (min-width: 801px) {
-	
-	#devices {
-	  flex-direction: row;
-	  justify-content: space-between;
-	}
-
-	.device {
-	  width: 42%;
 	}
 }
 	
