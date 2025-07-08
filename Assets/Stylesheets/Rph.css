@@ -161,3 +161,21 @@ body {
 	font-size: 150%;
 	color: #000000;
 }
+
+@media (max-width: 1200px) {
+	
+	body {
+		zoom: 75%;
+		font-size: 90%;
+	}
+	
+}
+
+@media (max-width: 800px) {
+	
+	body {
+		zoom: 50%;
+		font-size: 80%;
+	}
+	
+}

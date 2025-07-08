@@ -1,78 +1,44 @@
-const paths = [
-	"/Assets/Projects/MHDS/MHDS.html",
-	"/Assets/Projects/MHDS/MHDS.html",
-	"/Assets/Projects/MHDS/MHDS.html",
-	"/Assets/Projects/MHDS/MHDS.html",
-	"/Assets/Projects/MHDS/MHDS.html",
-	
-	"/Assets/Projects/MKVN/MKVN.html",
-	"/Assets/Projects/MKVN/MKVN.html",
-	"/Assets/Projects/MKVN/MKVN.html",
-	"/Assets/Projects/MKVN/MKVN.html",
-	"/Assets/Projects/MKVN/MKVN.html",
-	"/Assets/Projects/MKVN/MKVN.html",
-	
-	"/Assets/Projects/WIKILG/WIKILG.html",
-	"/Assets/Projects/WIKILG/WIKILG.html",
-	"/Assets/Projects/WIKILG/WIKILG.html",
-	
-	"/Assets/Projects/NMSMB/NMSMB.html"
+//Projects
+
+const projects = [
+  { path: "/Assets/Projects/MHDS/MHDS.html", weight: 5 },
+  { path: "/Assets/Projects/MKVN/MKVN.html", weight: 6 },
+  { path: "/Assets/Projects/WIKILG/WIKILG.html", weight: 3 },
+  { path: "/Assets/Projects/NMSMB/NMSMB.html", weight: 1 }
 ];
+
+const paths = projects.flatMap(p =>
+  Array.from({ length: p.weight }, () => p.path)
+);
 
 let rand = Math.floor(Math.random() * paths.length);
 let projectPath = paths[rand];
 
+//Devices
 
-const devicesPath = "/Assets/Home/Devices.html";
+const isMobile = window.matchMedia("(max-width: 800px)").matches;
+const devicesPath = isMobile
+  ? "/Assets/Home/Devices_mobile.html"
+  : "/Assets/Home/Devices.html";
 
-// Wait for DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', () => {
-	
-  const projectContainer = document.getElementById('featuredproject');
-  if (!projectContainer) {
-    console.error("Can't find element with id 'featuredproject'");
-    return;
-  }
+//DOM
 
-  const devicesContainer = document.getElementById('devices');
-  if (!devicesContainer) {
-    console.error("Can't find element with id 'devices'");
-    return;
-  }
-  
-
-  fetch(projectPath)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Failed to load ${projectPath}: ${response.status}`);
-      }
-      return response.text();
+function loadInto(url, containerId, errorMsg) {
+  fetch(url)
+    .then(res => {
+      if (!res.ok) throw new Error(`${url} (${res.status})`);
+      return res.text();
     })
     .then(html => {
-      // Inject the fetched HTML into the container
-      projectContainer.innerHTML = html;
-      // No need to load script here since Projects.js is loaded via defer in index.html
+      document.getElementById(containerId).innerHTML = html;
     })
-    .catch(error => {
-      console.error('Fetch error:', error);
-      projectContainer.textContent = "Project can't be loaded.";
+    .catch(err => {
+      console.error(err);
+      document.getElementById(containerId).textContent = errorMsg;
     });
-    
-    
-    
-	fetch(devicesPath)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Failed to load ${devicesPath}: ${response.status}`);
-      }
-      return response.text();
-    })
-    .then(html => {
-      devicesContainer.innerHTML = html;
-    })
-    .catch(error => {
-      console.error('Fetch error:', error);
-      devicesContainer.textContent = "Devices can't be loaded.";
-    });
-    
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadInto(projectPath, "featuredproject", "Projet indisponible.");
+  loadInto(devicesPath, "devices",       "Appareil indisponible.");
 });

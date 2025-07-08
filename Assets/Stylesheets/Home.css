@@ -45,12 +45,21 @@
 
 	width: 30%;
 	font-size: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
 }
 
-.id_left > img {
+.id_left > div > img {
 
 	border-radius: 100%;
 	width: 60%;
+}
+
+.id_separator {
+
+	border-right: 2px solid #e5e5e5;
+
 }
 
 .id_right {
@@ -95,18 +104,6 @@
   padding: 2rem;
   margin-bottom: 2rem;
 }
-
-@media (max-width: 800px) {
-	
-	#devices {
-	  flex-direction: column;
-	  justify-content: space-between;
-	}
-
-	.device {
-	  width: 100%;
-	}
-}
 	
 .device_title {
 
@@ -144,4 +141,65 @@
   width: auto;
   object-fit: contain;
   display: block;
+}
+
+
+@media (max-width: 1200px) {
+	
+	.id {
+	  padding: 2rem 3rem 1rem 3rem;
+	}
+	
+	.id_inside {
+			
+		flex-direction: column;
+	}
+	
+	.id_left {
+
+		order: 1;
+		width: 100%;
+		flex-direction: row;
+		gap: 1%;
+	}
+	
+	.id_left > div {
+
+		width: 49.5%;
+		font-size: 200%;
+	}
+	
+	.id_separator {
+		
+		display: none;
+	}
+	
+	.id_right {
+	
+		font-size: 250%;	
+	}
+	
+	.project {
+
+	  width: auto;
+	}
+	
+	#devices {
+	
+		font-size: 150%;
+	  flex-direction: column;
+	  justify-content: space-between;
+	}
+
+	.device {
+	  width: auto;
+	}
+}
+
+@media (max-width: 800px) {
+
+	#devices {
+
+		font-size: 150%;
+	}
 }
