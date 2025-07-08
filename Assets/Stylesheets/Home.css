@@ -95,7 +95,7 @@
 @media (max-width: 800px) {
 	
 	#devices {
-	  flex-direction: row;
+	  flex-direction: column;
 	  justify-content: space-between;
 	}
 
@@ -112,7 +112,7 @@
 	}
 
 	.device {
-	  width: 100%;
+	  width: 42%;
 	}
 }
 	
