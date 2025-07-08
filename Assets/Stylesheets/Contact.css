@@ -88,3 +88,20 @@
 	color: #000000;
 
 }
+
+@media (max-width: 1200px) {
+
+	.platform_list {
+
+		display: flex;
+		flex-direction: column;
+
+
+	}
+	
+	.platform {
+
+	  width: auto;
+	}
+
+}
