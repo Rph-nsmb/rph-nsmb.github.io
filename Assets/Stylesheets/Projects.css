@@ -19,7 +19,7 @@
 .project_left {
 
   flex-grow: 1;
-  flex-shrink: 0;
+  flex-shrink: 1;
   height: auto;
 
 display: flex;
@@ -30,6 +30,7 @@ flex-direction: column;
 .project_right {
   
   display: flex;
+  flex-shrink: 0;
   
   width: 20%;
   height: auto;
@@ -260,7 +261,12 @@ flex-direction: column;
 @media (max-width: 800px) {
 
   .project {
+    width: 100%;
+    box-sizing: border-box;
+  }
   
-	width: auto;
+  .project_contents {
+    
+    line-break: auto;
   }
 }
