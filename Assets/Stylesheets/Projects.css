@@ -148,27 +148,22 @@ flex-direction: column;
 }
 
 .project_colorbg {
-
-  max-height: 85vh;
+  max-height: 85%;
   overflow-y: auto;
-
   border-radius: 25px;
-  margin: 5rem auto 0 auto;
+  margin: 5% auto;
   width: 80%;
+  height: 100%;
 }
-
 
 .project_bg {
 
- max-height: 85vh;
+  max-height: 100%;
   overflow-y: auto;
-
   border-radius: 25px;
-
   padding: 0 1rem;
-  
   background-color: #1a1a1aE0;
-  
+  height: 100%;
 }
 
 .close {
@@ -268,5 +263,9 @@ flex-direction: column;
   .project_contents {
     
     line-break: auto;
+  }
+  
+  .modal_bottom {
+	flex-wrap: wrap;
   }
 }
