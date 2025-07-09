@@ -1,271 +1,280 @@
 /* The projects CSS */
-
 .project {
 
-  display: flex;
-  flex-direction: row;
-  gap: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
 
-  width: 90%;
-  margin: 2rem auto;
-  padding: 2rem 4rem;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem 4rem;
 
-  border-radius: 25px;
-  box-shadow: inset 5px 5px 20px 10px #f0f0f0, inset -5px -5px 50px 10px #FFFFFF52;
+    border-radius: 25px;
+    box-shadow: inset 5px 5px 20px 10px #f0f0f0, inset -5px -5px 50px 10px #FFFFFF52;
 }
 
 
 
 .project_left {
 
-  flex-grow: 1;
-  flex-shrink: 1;
-  height: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: auto;
 
-display: flex;
-flex-direction: column;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .project_right {
-  
-  display: flex;
-  flex-shrink: 0;
-  
-  width: 20%;
-  height: auto;
-  overflow: hidden;
-  justify-content: end;
+
+    display: flex;
+    flex-shrink: 0;
+
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+    justify-content: end;
 }
 
 
 .project_right img {
 
-  image-rendering: pixelated;
-  max-height: 100%;
-  height: auto;
-  max-width: 100%;
-  width: auto;
-  object-fit: contain;
-  display: block;
+    image-rendering: pixelated;
+    max-height: 100%;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .tags {
 
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-	gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 1rem;
 }
 
-.cancelled, .progress, .released {
+.cancelled,
+.progress,
+.released {
 
-	padding: 0.5rem 1rem;
-	border-radius: 25px;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
 }
 
 .cancelled {
 
-	background-color: #FF000080;
-	color: #FFFFFF;
+    background-color: #FF000080;
+    color: #FFFFFF;
 }
 
 .progress {
 
-	background-color: #FFFB0080;
-	color: #000000;
+    background-color: #FFFB0080;
+    color: #000000;
 }
 
 .released {
 
-	background-color: #00FF0080;
-	color: #FFFFFF;
+    background-color: #00FF0080;
+    color: #FFFFFF;
 }
 
 .project_contents {
 
-	margin-top: -0.5rem;
-	text-align: left;
-	color: #000000;
-
+    margin-top: -0.5rem;
+    text-align: left;
+    color: #000000;
 }
 
 .project_contents h1 {
 
-	font-size: 300%;
-
+    font-size: 300%;
 }
 
 .project_bottom {
 
-	flex-grow: 1;
+    flex-grow: 1;
 
-	display: flex;
+    display: flex;
 
-	align-items: end;
-
+    align-items: end;
 }
 
 .project_learnmore {
 
-	height:auto;
-	padding: 0.5rem 0.75rem;
-	width: fit-content;
-	text-align: left;
+    height: auto;
+    padding: 0.5rem 0.75rem;
+    width: fit-content;
+    text-align: left;
 
-	font-size: 150%;
-	
-	border: 2px solid #FFFFFF;
-	border-radius: 12px;
-	background: transparent;
-	color: #FFFFFF;
+    font-size: 150%;
 
-	cursor: pointer;
-	transition: all 0.5s;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    background: transparent;
+    color: #FFFFFF;
 
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
 .project_learnmore:hover {
 
 
-	background-color: #FFFFFF;
-	color: #000000;
-
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 
 
 .project_infos {
-  display: none; 
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.8);
-  backdrop-filter: blur(7.5px);
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(7.5px);
 }
 
 .project_colorbg {
-  max-height: 85%;
-  overflow-y: auto;
-  border-radius: 25px;
-  margin: 5% auto;
-  width: 80%;
-  height: 100%;
+    max-height: 85%;
+    overflow-y: auto;
+    border-radius: 25px;
+    margin: 5% auto;
+    width: 80%;
+    height: 100%;
 }
 
 .project_bg {
 
-  max-height: 100%;
-  overflow-y: auto;
-  border-radius: 25px;
-  padding: 0 1rem;
-  background-color: #1a1a1aE0;
-  height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    border-radius: 25px;
+    padding: 0 1rem;
+    background-color: #1a1a1aE0;
+    height: 100%;
 }
 
 .close {
-  color: #FFFFFF;
-  float: right;
-  font-size: 45px;
-  font-weight: bold;
+    color: #FFFFFF;
+    float: right;
+    font-size: 45px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #FF0000;
-  text-decoration: none;
-  cursor: pointer;
+    color: #FF0000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .project_modal {
 
-  overflow: auto;
-  padding: 2.5rem;
+    overflow: auto;
+    padding: 2.5rem;
 }
 
 
 .project_modal p {
 
-	font-size: 200%;
-	font-family: var(--main-font-m);
+    font-size: 200%;
+    font-family: var(--main-font-m);
 
-  padding: 3rem;
+    padding: 3rem;
 
-	color: #a1a1a1;
-
+    color: #a1a1a1;
 }
 
 .project_modal h1 {
 
-	font-size: 300%;
+    font-size: 300%;
 
-	color: #FFFFFF;
-	font-family: var(--main-font-b);
-
+    color: #FFFFFF;
+    font-family: var(--main-font-b);
 }
 
 .project_modal img {
 
-  width: 60%;
-  border: 0;
-  border-radius: 25px;
+    width: 60%;
+    border: 0;
+    border-radius: 25px;
 
-  transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .project_modal img:hover {
 
-  width: 75%;
-  border: 0;
-  border-radius: 25px;
+    width: 75%;
+    border: 0;
+    border-radius: 25px;
+}
 
+.project_modal .youtube_player,
+.project_modal .video_wrapper {
+
+    width: 60%;
 }
 
 .modal_bottom {
 
-	margin-top: 1rem;
+    margin-top: 1rem;
 
-	padding: 2.5rem;
+    padding: 2.5rem;
 
-	display: flex;
-	justify-content: end;
-	gap: 1rem;
-
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
 }
 
 
 /* The projects page CSS */
-
 .title {
 
-	font-size: 500%;
-	font-family: var(--main-font);
-
+    font-size: 500%;
+    font-family: var(--main-font);
 }
 
 .subtitle {
 
-	font-size: 250%;
-	font-family: var(--main-font-l);
+    font-size: 250%;
+    font-family: var(--main-font-l);
 }
 
 
 @media (max-width: 800px) {
 
-  .project {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .project_contents {
-    
-    line-break: auto;
-  }
-  
-  .modal_bottom {
-	flex-wrap: wrap;
-  }
+    .project {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project_contents {
+
+        line-break: auto;
+    }
+
+    .project_colorbg {
+
+        max-height: 95%;
+        font-size: 140%;
+    }
+
+
+    .modal_bottom {
+        flex-wrap: wrap;
+    }
+
+    .project_modal img,
+    .project_modal .youtube_player,
+    .project_modal .video_wrapper {
+
+        width: 80%;
+    }
 }
