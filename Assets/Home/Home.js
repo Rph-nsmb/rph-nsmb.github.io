@@ -16,10 +16,28 @@ let projectPath = paths[rand];
 
 //Devices
 
-const isMobile = window.matchMedia("(max-width: 800px)").matches;
-const devicesPath = isMobile
-  ? "/Assets/Home/Devices_mobile.html"
-  : "/Assets/Home/Devices.html";
+function insertDevice() {
+
+  
+}
+
+function insertDeviceEnd(){
+
+  document.getElementById("devices").innerHTML += `
+            
+  <details class="device" ${window.matchMedia("(max-width: 800px)").matches ? "" : "open"}>
+    <summary class="device_summary">Some other devices...</summary><br>
+    <div class="device_title">Some other devices...</div><br>
+    <br><div class="device_description">
+              
+    <div>• A Nintendo DS Lite (Crimson)</div>
+    <div>• A modded Nintendo Wii (White, with GC controller ports but can't read DVDs)</div>
+    <div>• A modded New Nintendo 2DS XL (Orange and white)</div><br>
+    <div style="text-align: center; font-size: 125%">And more!</div>
+    
+  </details>
+          `;
+}
 
 //DOM
 
@@ -38,7 +56,49 @@ function loadInto(url, containerId, errorMsg) {
     });
 }
 
+//Charging everything
+
 document.addEventListener("DOMContentLoaded", () => {
+
   loadInto(projectPath, "featuredproject", "Projet indisponible.");
-  loadInto(devicesPath, "devices",       "Appareil indisponible.");
+
+  fetch("/Assets/Home/devices.json")
+    .then(res => res.json())
+    .then(devices => {
+      devices.forEach(device => {
+
+        if (device.device) { //Normal devices
+
+        document.getElementById("devices").innerHTML += `
+
+        <details class="device" ${window.matchMedia("(max-width: 800px)").matches ? "" : "open"}>
+              <summary class="device_summary">${device.name}<br>(${device.attribute.type})</summary><br>
+              <div class="device_title">${device.name}<br>(${device.attribute.type})</div><br>
+              <div class="device_description">
+                <div><span class="bold">CPU:</span> ${device.attribute.CPU}</div>
+                <div><span class="bold">GPU:</span> ${device.attribute.GPU}</div>
+                <div><span class="bold">RAM:</span> ${device.attribute.RAM}</div>
+                <div><span class="bold">OS:</span> ${device.attribute.OS}</div>
+                <div><span class="bold">Notes:</span> ${device.notes}</div>
+              </div><br><br>
+              <div class="device_image">
+                <img src="${device.image}" alt="${device.name}">
+              </div>
+            </details>
+        `;
+
+        } else { //Final page
+
+          insertDeviceEnd();
+        }
+
+
+      });
+    })
+
+    
+    .catch(err => {
+      console.error(err);
+      document.getElementById("devices").textContent = 'Could not load devices data.';
+    });
 });

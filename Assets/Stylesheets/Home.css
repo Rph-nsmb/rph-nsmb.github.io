@@ -104,8 +104,13 @@
   padding: 2rem;
   margin-bottom: 2rem;
 }
-	
-.device_title {
+
+.device_summary {
+
+	display: none;
+}
+
+.device_title, .device_summary {
 
 	font-size: 250%;
 	color: #000000;
@@ -143,6 +148,14 @@
   display: block;
 }
 
+.device_expand {
+
+	color: #666666;
+	display: none;
+	font-size: 250%;
+	padding: 1rem 0;
+
+}
 
 @media (max-width: 1200px) {
 	
@@ -201,5 +214,20 @@
 	#devices {
 
 		font-size: 150%;
+	}
+
+	.device_summary {
+
+		display: block;
+	}
+
+	.device_title {
+
+		display: none;
+	}
+
+	.device_expand {
+
+		display: block;
 	}
 }

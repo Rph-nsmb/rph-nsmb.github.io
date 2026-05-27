@@ -1,0 +1,48 @@
+[
+    {
+        "device": true,
+        "name": "HP Elitebook 820 G2",
+        "attribute" : {  
+            "type": "Main computer",
+            "CPU": "Intel® Core™ i7-5600U",
+            "GPU": "Intel HD Graphics 5500",
+            "RAM": "16GB",
+            "OS": "Fedora 44"
+        },
+        "notes": "It works",
+        "image": "https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Home/E820.png"
+    },
+
+    {
+        "device": true,
+        "name": "Samsung Galaxy A34 5G",
+        "attribute" : {  
+            "type": "Main phone",
+            "CPU": "Mediatek Dimensity 1080",
+            "GPU": "ARM Mali G68 MC4",
+            "RAM": "6GB",
+            "OS": "Android 16 (One UI 8.5)"
+        },
+        "notes": "Does its job",
+        "image": "https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Home/A34.png"
+    },
+
+    {
+        "device": true,
+        "name": "Samsung Galaxy Watch7",
+        "attribute" : {  
+            "type": "Smart watch",
+            "CPU": "Exynos W1000",
+            "GPU": "Mali-G68",
+            "RAM": "2GB (I mean it's a smartwatch)",
+            "OS": "Wear OS 6.0 (Android 16, One UI 8.0 Watch)"
+        },
+        "notes": "Bluetooth / 40mm, the battery is small though",
+        "image": "https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Home/L300.png"
+    },
+
+    {
+        "device": false
+    }
+
+]
