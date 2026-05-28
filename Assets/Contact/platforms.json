@@ -1,0 +1,82 @@
+[
+  {
+    "category": "main",
+    "name": "Mail",
+    "color": "#555555",
+    "description": "You can contact me trough my email address:",
+    "button": "rph.nsmb@gmail.com",
+    "link": "mailto:rph.nsmb@gmail.com"
+  },
+  {
+    "category": "main",
+    "name": "Discord",
+    "color": "#5865f2",
+    "description": "I'm really active on Discord, so feel free to shoot me a DM!",
+    "button": "@rph_nsmb",
+    "link": null
+  },
+  {
+    "category": "other",
+    "name": "Github",
+    "color": "#000000",
+    "description": "I use Github sometimes to code stuff. They also host this website.",
+    "button": "Rph-nsmb",
+    "link": "https://github.com/Rph-nsmb"
+  },
+  {
+    "category": "other",
+    "name": "Reddit",
+    "color": "#ff4500",
+    "description": "I'm active on Reddit, tho I never post anything",
+    "button": "u/Rph_nsmb",
+    "link": "https://www.reddit.com/user/Rph_nsmb/"
+  },
+  {
+    "category": "other",
+    "name": "Chess.com",
+    "color": "#81b64c",
+    "description": "Don't expect my elo to be that high",
+    "button": "Rph_nsmb",
+    "link": "https://www.chess.com/member/rph_nsmb"
+  },
+  {
+    "category": "other",
+    "name": "Youtube",
+    "color": "#FF0000",
+    "description": "I have a Youtube channel I mostly use for private stuff",
+    "button": "Rph_nsmb",
+    "link": "https://www.youtube.com/@Rph_nsmb"
+  },
+  {
+    "category": "other",
+    "name": "Wolfy",
+    "color": "#1f2135",
+    "description": "Wolfy is an online werewolf game",
+    "button": "Rph_nsmb",
+    "link": null
+  },
+  {
+    "category": "other",
+    "name": "Mario Kart Tour",
+    "color": "#17cbf4",
+    "description": "A Mario Kart on mobiles? And it's FREE?",
+    "button": "Rph (Friend code: 2727 - 5132 - 4443)",
+    "link": null
+  },
+  {
+    "category": "other",
+    "name": "Spotify",
+    "color": "#1ed760",
+    "description": "I think I opened the app, once...",
+    "button": "Raphaelle",
+    "link": "https://open.spotify.com/user/31hvauoxjrez24h6zpttwat5ncym"
+  },
+  {
+    "category": "other",
+    "name": "Deezer",
+    "color": "#9333e8",
+    "description": "I use it as much as Spotify",
+    "button": "Rph",
+    "link": "https://www.deezer.com/fr/profile/6234904263"
+  }
+]
