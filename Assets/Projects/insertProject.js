@@ -33,7 +33,7 @@ function insertProject(id, project, name) {
               
             ${project.img ? `<img src="https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Projects/${name}/preview.png">` : ""}              
             ${
-              project.vid
+              project.video
                 ? `<div class="video_wrapper">
                       <video width="320" height="240" controls="">
                         <source src="https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Projects/${name}/preview.mp4" type="video/mp4">
