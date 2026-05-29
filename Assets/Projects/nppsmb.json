@@ -1,0 +1,14 @@
+{
+  "tags": ["progress"],
+  "name": "New++ Super Mario Bros.",
+  "color": "#0d2477",
+  "description": "New++ Super Mario Bros. is a in-progress full NSMB mod developed by <a target=\"_blank\" href=\"https://www.youtube.com/@IllyCat734/\" class=\"bold\">Illycat</a>. It adds new characters, new powerups, new enemies, new musics, new bosses and new gimmicks.<br>With nearly everything new, it aims to be one of the greatest NSMB mods ever.",
+  "video": true,
+  "buttons": [
+    {
+      "label": "Website",
+      "link": "https://www.nsmbcentral.net/mods/"
+    },
+    { "label": "Discord", "link": "https://discord.gg/NBEzPnR4ps" }
+  ]
+}

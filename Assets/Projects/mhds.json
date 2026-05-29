@@ -1,0 +1,14 @@
+{
+  "tags": ["released"],
+  "name": "Monty Hall DS",
+  "color": "#82fbfb",
+  "description": "Monty Hall DS is a simple homebrew to play the Monty Hall problem on a Nintendo DS. It also features a simulation mode, as well as some other functionnalities.<br>This is more of a demo than something else, but it's still worth trying.",
+  "img": true,
+  "buttons": [
+    {
+      "label": "Universal-DB (3DS)",
+      "link": "https://db.universal-team.net/ds/monty-hall-ds"
+    },
+    { "label": "Github", "link": "https://github.com/Rph-nsmb/MontyHallDS/" }
+  ]
+}

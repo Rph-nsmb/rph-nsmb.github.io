@@ -1,280 +1,242 @@
 /* The projects CSS */
 .project {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
 
-    display: flex;
-    flex-direction: row;
-    gap: 2.5rem;
-
-    width: 90%;
-    margin: 2rem auto;
-    padding: 2rem 4rem;
-
-    border-radius: 25px;
-    box-shadow: inset 5px 5px 20px 10px #f0f0f0, inset -5px -5px 50px 10px #FFFFFF52;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem 4rem;
 }
 
-
-
 .project_left {
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: auto;
 
-    flex-grow: 1;
-    flex-shrink: 1;
-    height: auto;
-
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .project_right {
+  display: flex;
+  flex-shrink: 0;
 
-    display: flex;
-    flex-shrink: 0;
-
-    width: 20%;
-    height: auto;
-    overflow: hidden;
-    justify-content: end;
+  width: 20%;
+  height: auto;
+  overflow: hidden;
+  justify-content: end;
 }
 
-
 .project_right img {
-
-    image-rendering: pixelated;
-    max-height: 100%;
-    height: auto;
-    max-width: 100%;
-    width: auto;
-    object-fit: contain;
-    display: block;
+  image-rendering: pixelated;
+  max-height: 100%;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .tags {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 1rem;
 }
 
-.cancelled,
-.progress,
-.released {
-
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
+.tag {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
 }
 
 .cancelled {
-
-    background-color: #FF000080;
-    color: #FFFFFF;
+  background-color: #ff000080;
+  color: #ffffff;
 }
 
 .progress {
-
-    background-color: #FFFB0080;
-    color: #000000;
+  background-color: #fffb0080;
+  color: #000000;
 }
 
 .released {
+  background-color: #00ff0080;
+  color: #ffffff;
+}
 
-    background-color: #00FF0080;
-    color: #FFFFFF;
+.modal_bottom a {
+  text-decoration: none;
 }
 
 .project_contents {
-
-    margin-top: -0.5rem;
-    text-align: left;
-    color: #000000;
+  margin-top: -0.5rem;
+  text-align: left;
+  color: #000000;
 }
 
 .project_contents h1 {
-
-    font-size: 300%;
+  font-size: var(--subtitle-size);
 }
 
 .project_bottom {
+  flex-grow: 1;
 
-    flex-grow: 1;
+  display: flex;
 
-    display: flex;
-
-    align-items: end;
+  align-items: end;
 }
 
 .project_learnmore {
+  height: auto;
+  padding: 0.5rem 0.75rem;
+  width: fit-content;
+  text-align: left;
 
-    height: auto;
-    padding: 0.5rem 0.75rem;
-    width: fit-content;
-    text-align: left;
+  font-size: var(--text-size);
 
-    font-size: 150%;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  background: transparent;
+  color: #ffffff;
+  text-decoration: none;
 
-    border: 2px solid #FFFFFF;
-    border-radius: 12px;
-    background: transparent;
-    color: #FFFFFF;
-
-    cursor: pointer;
-    transition: all 0.5s;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
 .project_learnmore:hover {
-
-
-    background-color: #FFFFFF;
-    color: #000000;
+  background-color: #ffffff;
+  color: #000000;
 }
 
-
-
 .project_infos {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(7.5px);
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(7.5px);
 }
 
 .project_colorbg {
-    max-height: 85%;
-    overflow-y: auto;
-    border-radius: 25px;
-    margin: 5% auto;
-    width: 80%;
-    height: 100%;
+  max-height: 85%;
+  overflow-y: auto;
+  border-radius: 25px;
+  margin: 5% auto;
+  width: 80%;
+  height: 100%;
 }
 
 .project_bg {
-
-    max-height: 100%;
-    overflow-y: auto;
-    border-radius: 25px;
-    padding: 0 1rem;
-    background-color: #1a1a1aE0;
-    height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  border-radius: 25px;
+  padding: 0 1rem;
+  background-color: #1a1a1ae0;
+  height: 100%;
 }
 
 .close {
-    color: #FFFFFF;
-    float: right;
-    font-size: 45px;
-    font-weight: bold;
+  color: #ffffff;
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+  transition: all 0.3s;
 }
 
 .close:hover,
 .close:focus {
-    color: #FF0000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #ff0000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .project_modal {
-
-    overflow: auto;
-    padding: 2.5rem;
+  overflow: auto;
+  padding: 2.5rem;
 }
 
-
 .project_modal p {
+  font-size: var(--text-size-big);
+  font-family: var(--main-font-m);
 
-    font-size: 200%;
-    font-family: var(--main-font-m);
+  padding: 3rem;
 
-    padding: 3rem;
-
-    color: #a1a1a1;
+  color: #a1a1a1;
 }
 
 .project_modal h1 {
+  font-size: var(--title-size);
 
-    font-size: 300%;
-
-    color: #FFFFFF;
-    font-family: var(--main-font-b);
+  color: #ffffff;
+  font-family: var(--main-font-b);
 }
 
 .project_modal img {
+  margin: 2rem 0;
+  width: 60%;
+  border: 0;
+  border-radius: 25px;
 
-    width: 60%;
-    border: 0;
-    border-radius: 25px;
-
-    transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .project_modal img:hover {
-
-    width: 75%;
-    border: 0;
-    border-radius: 25px;
+  scale: 1.1;
+  border-radius: 25px;
 }
 
 .project_modal .youtube_player,
 .project_modal .video_wrapper {
-
-    width: 60%;
+  width: 60%;
 }
 
 .modal_bottom {
+  margin-top: 1rem;
 
-    margin-top: 1rem;
+  padding: 2.5rem;
 
-    padding: 2.5rem;
-
-    display: flex;
-    justify-content: end;
-    gap: 1rem;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
 }
-
 
 /* The projects page CSS */
 .title {
-
-    font-size: 500%;
-    font-family: var(--main-font);
+  font-size: var(--title-size);
+  font-family: var(--main-font);
 }
 
 .subtitle {
-
-    font-size: 250%;
-    font-family: var(--main-font-l);
+  font-size: var(--subtitle-size);
+  font-family: var(--main-font-l);
 }
 
-
 @media (max-width: 800px) {
+  .project {
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-    .project {
-        width: 100%;
-        box-sizing: border-box;
-    }
+  .project_contents {
+    line-break: auto;
+  }
 
-    .project_contents {
+  .project_colorbg {
+    max-height: 95%;
+  }
 
-        line-break: auto;
-    }
+  .modal_bottom {
+    flex-wrap: wrap;
+  }
 
-    .project_colorbg {
-
-        max-height: 95%;
-        font-size: 140%;
-    }
-
-
-    .modal_bottom {
-        flex-wrap: wrap;
-    }
-
-    .project_modal img,
-    .project_modal .youtube_player,
-    .project_modal .video_wrapper {
-
-        width: 80%;
-    }
+  .project_modal img,
+  .project_modal .youtube_player,
+  .project_modal .video_wrapper {
+    width: 80%;
+  }
 }

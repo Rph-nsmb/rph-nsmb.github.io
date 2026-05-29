@@ -33,11 +33,11 @@
   },
   {
     "category": "other",
-    "name": "Chess.com",
-    "color": "#81b64c",
+    "name": "Lichess",
+    "color": "#444444",
     "description": "Don't expect my elo to be that high",
     "button": "Rph_nsmb",
-    "link": "https://www.chess.com/member/rph_nsmb"
+    "link": "https://lichess.org/@/Rph_nsmb"
   },
   {
     "category": "other",
@@ -49,11 +49,11 @@
   },
   {
     "category": "other",
-    "name": "Wolfy",
-    "color": "#1f2135",
-    "description": "Wolfy is an online werewolf game",
+    "name": "Chess.com",
+    "color": "#81b64c",
+    "description": "It's Lichess but worse but with my friends",
     "button": "Rph_nsmb",
-    "link": null
+    "link": "https://www.chess.com/member/rph_nsmb"
   },
   {
     "category": "other",

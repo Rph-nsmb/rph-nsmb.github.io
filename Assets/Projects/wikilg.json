@@ -1,0 +1,14 @@
+{
+  "tags": ["released"],
+  "name": "Wiki Loup-Garou",
+  "color": "#330000",
+  "description": "Wiki Loup-Garou is a french wiki referencing all about the well-known Werewolf game: from the characters to their strategies, including the game variants and custom characters from players!<br>I am a wiki moderator and I contribute to the wiki's activity.",
+  "img": true,
+  "buttons": [
+    {
+      "label": "Website",
+      "link": "https://loupgarou.fandom.com/fr/wiki/Wiki_Loup-Garou"
+    },
+    { "label": "Discord", "link": "https://discord.gg/QZ7FvVqg" }
+  ]
+}

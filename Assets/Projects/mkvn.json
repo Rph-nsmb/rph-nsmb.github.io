@@ -1,0 +1,14 @@
+{
+  "tags": ["released", "progress"],
+  "name": "Mario Kart Virtual Night",
+  "color": "linear-gradient(90deg, #b100ff80, #33ff0080)",
+  "description": "Mario Kart Virtual Night is a mod of Mario Kart Wii, with over 700 tracks, featuring completly custom OST, with a Mario Kart World and Mario Kart 8 Deluxe artstyle.",
+  "img": true,
+  "buttons": [
+    {
+      "label": "Website",
+      "link": "https://virtual-night.github.io"
+    },
+    { "label": "Discord", "link": "https://discord.gg/2Tbpq2JNUC" }
+  ]
+}

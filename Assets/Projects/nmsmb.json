@@ -1,0 +1,14 @@
+{
+  "tags": ["cancelled"],
+  "name": "New Mini SMB",
+  "color": "#5791fa",
+  "description": "New Mini SMB was a hack made by Nitro Team. It came from a revival of old mods made by team members. It was a full 8-world hack that didn't want to fully new-ify NSMBDS, but to offer a new spin on the style used throughout the base game.<br>Sadly, the team collapsed and the mod today is discontinued, but a demo still exists.",
+  "img": true,
+  "buttons": [
+    {
+      "label": "Website",
+      "link": "https://www.nsmbcentral.net/mods/New%20Mini%20SMB/"
+    },
+    { "label": "Discord", "link": "https://discord.gg/GgqJFbmkuZ" }
+  ]
+}

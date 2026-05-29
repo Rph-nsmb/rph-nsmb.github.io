@@ -1,48 +1,46 @@
-const projectPaths = [
-  "/Assets/Projects/MHDS/MHDS.html",
-  "/Assets/Projects/MKVN/MKVN.html",
-  "/Assets/Projects/WIKILG/WIKILG.html",
-  "/Assets/Projects/NMSMB/NMSMB.html",
-  "/Assets/Projects/NPPSMB/NPPSMB.html",
-  "/Assets/Projects/SM256/SM256.html"
-];
-
-const insertIds = [
-  "mhds",
-  "mkvn",
-  "wikilg",
-  "nmsmb",
-  "nppsmb",
-  "sm256"
-];
-
 document.addEventListener("DOMContentLoaded", () => {
-	
-  for (let i = 0; i < insertIds.length; i++) {
-
-    const id = insertIds[i];
-    const projectPath = projectPaths[i];
-
-    const containerEl = document.getElementById(id);
-    if (!containerEl) {
-      console.error(`Impossible de trouver l'élément avec l'id « ${id} »`);
-      continue; // on poursuit malgré l'erreur
-    }
-
-    fetch(projectPath)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`Échec du chargement de ${projectPath} : ${response.status}`);
-        }
-        return response.text();
-      })
-      .then(html => {
-        containerEl.innerHTML = html;
-      })
-      .catch(error => {
-        console.error("Erreur fetch :", error);
-        containerEl.textContent = `Le projet ${projectPath} n'a pas pu être chargé.`;
+  fetch("/Assets/Projects/projects.json")
+    .then((res) => res.json())
+    .then((projects) => {
+      projects.main.forEach((name) => {
+        fetch(`/Assets/Projects/${name}.json`)
+          .then((res) => res.json())
+          .then((project) => insertProject("main_projects", project, name));
       });
+      projects.other.forEach((name) => {
+        fetch(`/Assets/Projects/${name}.json`)
+          .then((res) => res.json())
+          .then((project) => insertProject("other_projects", project, name));
+      });
+    });
+});
+
+// Project modals
+document.addEventListener("click", (event) => {
+  // If a Learn More button is clicked
+  const button = event.target.closest(".project_learnmore");
+  if (button) {
+    const modalSelector = button.getAttribute("data-modal-target");
+    if (!modalSelector) return;
+
+    const modal = document.querySelector(modalSelector);
+    if (modal) {
+      modal.style.display = "block"; // Show the modal
+    }
+    return; // Stop processing further for this event
   }
 
+  // If a close button (×) is clicked inside a modal
+  if (event.target.classList.contains("close")) {
+    const modal = event.target.closest(".project_infos");
+    if (modal) {
+      modal.style.display = "none"; // Hide the modal
+    }
+    return;
+  }
+
+  // If user clicks outside modal content (on the overlay)
+  if (event.target.classList.contains("project_infos")) {
+    event.target.style.display = "none"; // Hide the modal overlay
+  }
 });

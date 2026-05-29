@@ -1,49 +1,57 @@
 @font-face {
-     font-family: Ubuntu;
-     src: url('https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Stylesheets/Ubuntu-font/Ubuntu-R.ttf') format('truetype');
-     font-weight: normal;
-     font-style: normal;
+  font-family: Ubuntu;
+  src: url("https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Stylesheets/Ubuntu-font/Ubuntu-R.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-     font-family: Ubuntu-L;
-     src: url('https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Stylesheets/Ubuntu-font/Ubuntu-L.ttf') format('truetype');
-     font-weight: normal;
-     font-style: normal;
+  font-family: Ubuntu-L;
+  src: url("https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Stylesheets/Ubuntu-font/Ubuntu-L.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-     font-family: Ubuntu-B;
-     src: url('https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Stylesheets/Ubuntu-font/Ubuntu-B.ttf') format('truetype');
-     font-weight: normal;
-     font-style: normal;
+  font-family: Ubuntu-B;
+  src: url("https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Stylesheets/Ubuntu-font/Ubuntu-B.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-     font-family: Ubuntu-M;
-     src: url('https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Stylesheets/Ubuntu-font/Ubuntu-M.ttf') format('truetype');
-     font-weight: normal;
-     font-style: normal;
+  font-family: Ubuntu-M;
+  src: url("https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/Stylesheets/Ubuntu-font/Ubuntu-M.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-
 
 :root {
+  --main-font: Ubuntu;
+  --main-font-l: Ubuntu-L;
+  --main-font-b: Ubuntu-B;
+  --main-font-m: Ubuntu-M;
 
-	--main-font: Ubuntu;
-	--main-font-l: Ubuntu-L;
-	--main-font-b: Ubuntu-B;
-	--main-font-m: Ubuntu-M;
-
+  --welcome-size: 10rem;
+  --navbar-size: 2.5rem;
+  --title-size: 5rem;
+  --subtitle-size: 2.5rem;
+  --text-size-big: 2rem;
+  --text-size: 1.5rem;
+  --text-size-small: 1rem;
 }
 
-
 body {
-    background: url('https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/bg.png') no-repeat center fixed;
-    background-size: cover;
+  background: url("https://raw.githubusercontent.com/Rph-nsmb/rph-nsmb.github.io/refs/heads/main/Assets/bg.png")
+    no-repeat center fixed;
+  background-size: cover;
 }
 
 .navbar {
-
   top: 1.5rem;
   width: 97%;
   margin: 1.5rem auto 2rem auto;
@@ -55,40 +63,32 @@ body {
   background: transparent;
 
   font-family: Ubuntu;
-  font-size: 200%;
 }
-
 
 .main {
-	margin: 10rem auto;
-	width: 80%;
-	
-	display: flex;
-	flex-direction: column;
-	gap: 5rem;
+  margin: 10rem auto;
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
   justify-content: center;
-	
-	font-family: var(--main-font);
+
+  font-family: var(--main-font);
 }
 
-
-
-[id^=section] {
-
-	width:100%;
-   margin: 0 auto;
-   text-align: center;
+[id^="section"] {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
-
 
 .link {
-
-	color: #ff00f7;
+  color: #ff00f7;
 }
 
 .bold {
-
-	font-family: var(--main-font-b);
+  font-family: var(--main-font-b);
 }
 
 .youtube_player {
@@ -98,13 +98,12 @@ body {
   overflow: hidden;
   max-width: 100%;
   margin: 3rem auto;
-  
+
   transition: all 0.5s;
 }
 
 .youtube_player:hover {
-
-	transform: scale(1.25);
+  transform: scale(1.25);
 }
 
 .youtube_player iframe {
@@ -124,13 +123,12 @@ body {
   overflow: hidden;
   max-width: 100%;
   margin: 3rem auto;
-  
+
   transition: all 0.5s;
 }
 
 .video_wrapper:hover {
-
-	transform: scale(1.25);
+  transform: scale(1.25);
 }
 
 .video_wrapper video {
@@ -143,36 +141,59 @@ body {
   border-radius: 25px;
 }
 
+.box {
+  background: rgba(240, 240, 240, 0.1);
+  border-radius: 25px;
+  box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.box:hover:not(.id, .device) {
+  box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.2);
+}
 
 #footer {
+  width: 40%;
+  margin: 5rem auto 0;
 
-	width: 40%;
-	margin: 15rem auto 0 auto;
+  padding: 2rem;
 
-	padding: 2rem;
+  border-top: 1px solid #a1a1a1;
 
-	border-top: 1px solid #a1a1a1;
-
-	text-align: center;
-	font-family: var(--main-font-l);
-	font-size: 150%;
-	color: #000000;
+  text-align: center;
+  font-family: var(--main-font-l);
+  font-size: 1.5rem;
+  color: #000000;
 }
 
 @media (max-width: 1200px) {
-	
-	body {
-		zoom: 75%;
-		font-size: 90%;
-	}
-	
+  :root {
+    --welcome-size: 8rem;
+    --navbar-size: 2rem;
+    --title-size: 4rem;
+    --subtitle-size: 2.5rem;
+    --text-size-big: 1.6rem;
+    --text-size: 1.3rem;
+    --text-size-small: 1rem;
+  }
+
+  body {
+    zoom: 75%;
+  }
 }
 
 @media (max-width: 800px) {
-	
-	body {
-		zoom: 50%;
-		font-size: 80%;
-	}
-	
+  :root {
+    --welcome-size: 6rem;
+    --navbar-size: 2rem;
+    --title-size: 3rem;
+    --subtitle-size: 2rem;
+    --text-size-big: 1.6rem;
+    --text-size: 1.3rem;
+    --text-size-small: 1.2rem;
+  }
+
+  body {
+    zoom: 50%;
+  }
 }

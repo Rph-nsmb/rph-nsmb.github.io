@@ -1,0 +1,4 @@
+{
+  "main": ["mhds", "mkvn", "wikilg", "nmsmb"],
+  "other": ["nppsmb", "sm256"]
+}
