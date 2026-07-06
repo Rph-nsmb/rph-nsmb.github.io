@@ -41,14 +41,6 @@
   },
   {
     "category": "other",
-    "name": "Youtube",
-    "color": "#FF0000",
-    "description": "I have a Youtube channel I mostly use for private stuff",
-    "button": "Rph_nsmb",
-    "link": "https://www.youtube.com/@Rph_nsmb"
-  },
-  {
-    "category": "other",
     "name": "Chess.com",
     "color": "#81b64c",
     "description": "It's Lichess but worse but with my friends",
